@@ -1,0 +1,3 @@
+green color: #49A246
+orange color: #E15241
+grey color: #919191
