@@ -38,6 +38,7 @@
   width: 100%;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .sidebar__navigation-icon {

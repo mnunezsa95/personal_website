@@ -1,0 +1,6 @@
+@font-face {
+  font-family: "Teko";
+  src: url("../vendor/fonts/Teko-Regular.woff2") format("woff2"), url("../vendor/fonts/Teko-Medium.woff2") format("woff2"),
+    url("../vendor/fonts/Teko-SemiBold.woff2") format("woff2"), url("../vendor/fonts/Teko-Bold.woff2") format("woff2");
+  font-weight: 400 500 600 700;
+}

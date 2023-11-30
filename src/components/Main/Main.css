@@ -1,0 +1,33 @@
+.main {
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  max-width: 100vw;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  font-family: "Teko", sans-serif;
+  font-size: 100px;
+  font-weight: 600;
+  line-height: 0.8;
+  color: white;
+}
+
+.title__text {
+  margin: 0;
+}
+
+.title__letter-m {
+  width: 60px;
+  height: 57px;
+}
+
+.main__image {
+  align-self: center;
+  width: 700px;
+  height: 600px;
+}
