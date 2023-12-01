@@ -4,7 +4,7 @@ import profileIcon from "../../images/letter-m.svg";
 import emailIcon from "../../images/email-icon.svg";
 import codeIcon from "../../images/code-icon.svg";
 import homeIcon from "../../images/home-icon.svg";
-import homeIconCurrent from "../../images/home-icon-current.svg";
+import homeIconCurrent from "../../images/home-icon-active.svg";
 import imageIcon from "../../images/image-icon.svg";
 import linkedinIcon from "../../images/linkedin-icon.svg";
 import githubIcon from "../../images/github-icon.svg";
