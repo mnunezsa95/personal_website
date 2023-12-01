@@ -2,9 +2,7 @@
   margin: 0 auto;
   display: flex;
   align-items: center;
-  max-width: 100vw;
-  padding-left: 100px;
-  padding-right: 100px;
+  max-width: 75vw;
   gap: 20px;
 }
 
@@ -15,7 +13,7 @@
   font-size: 100px;
   font-weight: 600;
   line-height: 0.8;
-  color: white;
+  color: #919191;
 }
 
 .main__title-text {
@@ -33,8 +31,8 @@
 
 .main__image {
   align-self: center;
-  width: 500px;
-  height: 500px;
+  width: 480px;
+  height: 480px;
   border-radius: 75%;
   animation: rotation 100s infinite linear;
 }
@@ -50,8 +48,6 @@
 
 @media screen and (max-width: 1140px) {
   .main {
-    padding-left: 75px;
-    padding-right: 75px;
     gap: 20px;
   }
 
@@ -72,8 +68,6 @@
 
 @media screen and (max-width: 960px) {
   .main {
-    padding-left: 50px;
-    padding-right: 50px;
     gap: 10px;
   }
 

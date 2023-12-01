@@ -3,6 +3,7 @@ import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Sidebar from "../Sidebar/Sidebar.js";
 import Main from "../Main/Main.js";
+import AboutMe from "../AboutMe/AboutMe.js";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         </Route>
         <Route path="/about-me">
           <Sidebar></Sidebar>
+          <AboutMe></AboutMe>
         </Route>
         <Route path="/code">
           <Sidebar></Sidebar>
