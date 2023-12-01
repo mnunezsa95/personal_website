@@ -46,6 +46,10 @@
   height: 25px;
 }
 
+.sidebar__navigation-icon:hover {
+  opacity: 0.5;
+}
+
 .sidebar__navigation-social-icons {
   background-color: rgba(37, 42, 51);
   display: flex;
