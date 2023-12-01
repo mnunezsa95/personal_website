@@ -1,11 +1,13 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import profileIcon from "../../images/letter-m.svg";
 import emailIcon from "../../images/email-icon.svg";
 import codeIcon from "../../images/code-icon.svg";
+import codeIconActive from "../../images/code-icon-active.svg";
 import homeIcon from "../../images/home-icon.svg";
 import homeIconCurrent from "../../images/home-icon-active.svg";
-import imageIcon from "../../images/image-icon.svg";
+import aboutMeIcon from "../../images/about-me.svg";
+import aboutMeIconActive from "../../images/about-me-active.svg";
 import linkedinIcon from "../../images/linkedin-icon.svg";
 import githubIcon from "../../images/github-icon.svg";
 import "./Sidebar.css";
@@ -24,20 +26,44 @@ function Sidebar() {
       <div className="sidebar__navigation">
         <div className="sidebar__navigation-container">
           {currentLocation !== "/" ? (
-            <button className="sidebar__navigation-button">
-              <img className="sidebar__navigation-icon" src={homeIcon} alt="home icon"></img>
-            </button>
+            <Link to="/">
+              <button className="sidebar__navigation-button">
+                <img className="sidebar__navigation-icon" src={homeIcon} alt="home icon"></img>
+              </button>
+            </Link>
           ) : (
-            <button className="sidebar__navigation-button">
-              <img className="sidebar__navigation-icon" src={homeIconCurrent} alt="home icon"></img>
-            </button>
+            <Link to="/">
+              <button className="sidebar__navigation-button">
+                <img className="sidebar__navigation-icon" src={homeIconCurrent} alt="home icon"></img>
+              </button>
+            </Link>
           )}
-          <button className="sidebar__navigation-button">
-            <img className="sidebar__navigation-icon" src={imageIcon} alt="imageIcon"></img>
-          </button>
-          <button className="sidebar__navigation-button">
-            <img className="sidebar__navigation-icon" src={codeIcon} alt="code icon"></img>
-          </button>
+          {currentLocation === "/about-me" ? (
+            <Link to="/about-me">
+              <button className="sidebar__navigation-button">
+                <img className="sidebar__navigation-icon" src={aboutMeIconActive} alt="imageIcon"></img>
+              </button>
+            </Link>
+          ) : (
+            <Link to="/about-me">
+              <button className="sidebar__navigation-button">
+                <img className="sidebar__navigation-icon" src={aboutMeIcon} alt="imageIcon"></img>
+              </button>
+            </Link>
+          )}
+          {currentLocation === "/code" ? (
+            <Link to="/code">
+              <button className="sidebar__navigation-button">
+                <img className="sidebar__navigation-icon" src={codeIconActive} alt="code icon"></img>
+              </button>
+            </Link>
+          ) : (
+            <Link to="/code">
+              <button className="sidebar__navigation-button">
+                <img className="sidebar__navigation-icon" src={codeIcon} alt="code icon"></img>
+              </button>
+            </Link>
+          )}
           <button className="sidebar__navigation-button">
             <img className="sidebar__navigation-icon" src={emailIcon} alt="email icon"></img>
           </button>

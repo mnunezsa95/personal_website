@@ -35,6 +35,17 @@
   align-self: center;
   width: 500px;
   height: 500px;
+  border-radius: 75%;
+  animation: rotation 100s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 @media screen and (max-width: 1140px) {
