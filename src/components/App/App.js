@@ -17,6 +17,9 @@ function App() {
           <Sidebar></Sidebar>
           <AboutMe></AboutMe>
         </Route>
+        <Route path="/education">
+          <Sidebar></Sidebar>
+        </Route>
         <Route path="/code">
           <Sidebar></Sidebar>
         </Route>

@@ -8,6 +8,8 @@ import homeIcon from "../../images/home-icon.svg";
 import homeIconCurrent from "../../images/home-icon-active.svg";
 import aboutMeIcon from "../../images/about-me.svg";
 import aboutMeIconActive from "../../images/about-me-active.svg";
+import educationIcon from "../../images/education-icon.svg";
+import educationIconActive from "../../images/education-icon-active.svg";
 import linkedinIcon from "../../images/linkedin-icon.svg";
 import githubIcon from "../../images/github-icon.svg";
 import "./Sidebar.css";
@@ -48,6 +50,19 @@ function Sidebar() {
             <Link to="/about-me">
               <button className="sidebar__navigation-button">
                 <img className="sidebar__navigation-icon" src={aboutMeIcon} alt="imageIcon"></img>
+              </button>
+            </Link>
+          )}
+          {currentLocation === "/education" ? (
+            <Link to="/education">
+              <button className="sidebar__navigation-button">
+                <img className="sidebar__navigation-icon" src={educationIconActive} alt="imageIcon"></img>
+              </button>
+            </Link>
+          ) : (
+            <Link to="/education">
+              <button className="sidebar__navigation-button">
+                <img className="sidebar__navigation-icon" src={educationIcon} alt="imageIcon"></img>
               </button>
             </Link>
           )}

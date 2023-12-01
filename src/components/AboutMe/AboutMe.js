@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import profileImage from "../../images/marlon-nunez.jpeg";
 import "./AboutMe.css";
+import { useHistory } from "react-router-dom";
 
 function AboutMe() {
+  let history = useHistory();
+  const handleEducationLink = () => {
+    history.push("/education");
+  };
+
   return (
     <section className="about-me">
       <div>
@@ -33,6 +39,12 @@ function AboutMe() {
           </p>
         </div>
         <img className="about-me__image" src={profileImage} alt="Marlon Nunez"></img>
+      </div>
+      <div className="about-me__container-buttons">
+        <button className="about-me__button" tyoe="button" onClick={handleEducationLink}>
+          Education
+        </button>
+        <button className="about-me__button">Skills and Languages</button>
       </div>
     </section>
   );
