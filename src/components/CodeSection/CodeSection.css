@@ -1,9 +1,21 @@
+.code__section {
+  margin: 0 auto;
+  max-width: 90vw;
+}
+
+.code__section-title {
+  margin: 0 auto;
+  width: 90%;
+  font-family: "Teko", sans-serif;
+  font-size: 40px;
+  color: #49a246;
+}
+
 .code__section-container {
   margin: 0 auto;
+  width: 90%;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  column-gap: 10px;
-  row-gap: 10px;
+  align-items: center;
+  gap: 10px;
 }

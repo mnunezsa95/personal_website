@@ -5,11 +5,14 @@ import "./CodeSection.css";
 
 function CodeSection() {
   return (
-    <div className="code__section-container">
-      {codeItems.map((item) => {
-        return <CodeCard codeItem={item} key={item?.codeId ?? item?.codeId}></CodeCard>;
-      })}
-    </div>
+    <section className="code__section">
+      <h2 className="code__section-title">Languages & Technologies</h2>
+      <div className="code__section-container">
+        {codeItems.map((item) => {
+          return <CodeCard codeItem={item} key={item?.codeId ?? item?.codeId}></CodeCard>;
+        })}
+      </div>
+    </section>
   );
 }
 
