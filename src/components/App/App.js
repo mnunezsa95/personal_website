@@ -4,7 +4,7 @@ import "./App.css";
 import Sidebar from "../Sidebar/Sidebar.js";
 import Main from "../Main/Main.js";
 import AboutMe from "../AboutMe/AboutMe.js";
-import CodeCard from "../CodeCard/CodeCard.js";
+import CodeSection from "../CodeSection/CodeSection.js";
 
 function App() {
   return (
@@ -23,7 +23,7 @@ function App() {
         </Route>
         <Route path="/code">
           <Sidebar></Sidebar>
-          <CodeCard></CodeCard>
+          <CodeSection></CodeSection>
         </Route>
       </Switch>
     </div>
