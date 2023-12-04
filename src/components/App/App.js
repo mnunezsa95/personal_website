@@ -5,6 +5,7 @@ import Sidebar from "../Sidebar/Sidebar.js";
 import Main from "../Main/Main.js";
 import AboutMe from "../AboutMe/AboutMe.js";
 import CodeSection from "../CodeSection/CodeSection.js";
+import CodeCardModal from "../CodeCardModal/CodeCardModal.js";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/code">
           <Sidebar></Sidebar>
           <CodeSection></CodeSection>
+          {/* <CodeCardModal></CodeCardModal> */}
         </Route>
       </Switch>
     </div>
