@@ -36,7 +36,9 @@ function App() {
           <CodeSection handleSelectedCard={handleSelectedCard}></CodeSection>
         </Route>
       </Switch>
-      {activeModal === "preview" && <CodeCardModal isOpen={activeModal === "preview"} handleCloseModal={handleCloseModal}></CodeCardModal>}
+      {activeModal === "preview" && (
+        <CodeCardModal isOpen={activeModal === "preview"} selectedCard={selectedCard} handleCloseModal={handleCloseModal}></CodeCardModal>
+      )}
     </div>
   );
 }

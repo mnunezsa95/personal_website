@@ -3,7 +3,7 @@ const codeItems = [
     codeId: 1,
     img: require("../../images/html-icon.svg").default,
     name: "HTML 5",
-    description: "abc",
+    description: "abcdxencjwxdnehdejdxwjdxehfewjskzjcdexdeddwjsnwedejmwkskoefjewksxjecfejwhnxksjqmksjwdxw",
   },
   {
     codeId: 2,

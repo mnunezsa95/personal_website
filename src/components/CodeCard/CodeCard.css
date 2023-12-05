@@ -1,27 +1,34 @@
-.newscard__container {
+.codecard__container {
   margin: 0 auto;
   width: 200px;
   display: flex;
   flex-direction: column;
-  background-color: #919191;
-  border-radius: 15px;
+  background-color: transparent;
+  border-radius: 15px 15px 0 0;
 }
 
-.newscard__image {
+.codecard__button {
+  border-radius: 15px 15px 0 0;
+  padding: 0;
+  border: none;
+}
+
+.codecard__image {
   height: 120px;
+  border-radius: 15px 15px 0 0;
 }
 
-.newscard__info-container {
+.codecard__info-container {
   background-color: #49a246;
   padding: 10px 20px;
-  border-radius: 0 0 15px 15px;
   display: flex;
   flex-direction: column;
   flex-grow: 1;
   justify-content: flex-start;
+  border-radius: 0 0 15px 15px;
 }
 
-.newscard__info-title {
+.codecard__info-title {
   margin: 0;
   font-size: 1.5rem;
   font-family: "Teko", sans-serif;
@@ -32,7 +39,7 @@
   overflow: hidden;
 }
 
-.newscard__info-text {
+.codecard__info-text {
   margin: 0;
   font-size: 1.2rem;
   font-family: "Teko", sans-serif;

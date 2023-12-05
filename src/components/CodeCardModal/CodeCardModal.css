@@ -4,22 +4,18 @@
   bottom: 0;
   right: 0;
   left: 0;
-  justify-content: center;
-  align-items: center;
   display: flex;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .modal__content-card {
-  background-color: #919191;
+  background-color: #49a246;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   margin: auto;
-  box-sizing: border-box;
-  max-width: 498px;
-  max-height: 610px;
+  max-width: 420px;
+  max-height: 500px;
   height: 100%;
   width: 100%;
   position: relative;
@@ -27,8 +23,9 @@
 
 .modal__image {
   border-radius: 10px 10px 0px 0px;
-  height: 498px;
-  max-height: 498px;
+  height: 200px;
+  width: auto;
+  background-color: white;
 }
 
 .modal__close-button-image {
@@ -43,32 +40,26 @@
   right: 28px;
   top: 28px;
   cursor: pointer;
-}
-
-.modal__close:hover {
-  cursor: pointer;
-  opacity: 0.5;
-}
-
-.modal__info-section-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  opacity: 1;
 }
 
 .modal__info {
-  font-family: "Cabinet Grotesk", sans-serif;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 1.2;
-  text-align: left;
-  padding: 20px 0 32px 32px;
+  line-height: 1.1;
+  padding: 20px;
 }
 
 .modal__info-name {
-  margin: 0 0 12px 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 30px;
+  font-family: "Teko", sans-serif;
+  padding-bottom: 10px;
 }
 
 .modal__info-description {
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  word-wrap: break-word;
 }
