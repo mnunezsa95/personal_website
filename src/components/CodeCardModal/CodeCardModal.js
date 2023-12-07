@@ -10,6 +10,13 @@ function CodeCardModal({ handleCloseModal, selectedCard }) {
         <div className="modal__info">
           <p className="modal__info-name">{selectedCard.name}</p>
           <p className="modal__info-description">{selectedCard.description}</p>
+          {selectedCard?.projects?.map((item, index) => {
+            return (
+              <button className="modal__info-project-button" type="button" key={index} onClick={() => window.open(selectedCard?.projectURL[index])}>
+                {item}
+              </button>
+            );
+          })}
         </div>
       </div>
     </div>

@@ -3,7 +3,10 @@ const codeItems = [
     codeId: 1,
     img: require("../../images/html-icon.svg").default,
     name: "HTML 5",
-    description: "abcdxencjwxdnehdejdxwjdxehfewjskzjcdexdeddwjsnwedejmwkskoefjewksxjecfejwhnxksjqmksjwdxw",
+    description:
+      "My work reflects a meticulous attention to detail and an unwavering commitment to best practices, resulting in web experiences that seamlessly blend form and function. My expertise extends beyond the basics, as seen in my thoughtful use of semantic markup, responsive design principles, and commitment to cross-browser compatibility, ensuring a flawless user experience across diverse platforms. ",
+    projects: ["Library Landing Page", "Coffeeshop"],
+    projectURL: ["https://mnunezsa95.github.io/se_project_library/", "https://mnunezsa95.github.io/se_project_coffeeshop/"],
   },
   {
     codeId: 2,

@@ -63,3 +63,23 @@
   font-size: 15px;
   word-wrap: break-word;
 }
+
+.modal__info-project-button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #49a246;
+  background-color: white;
+  border: 2px white;
+  border-radius: 20px;
+  padding: 8px;
+  line-height: 0.8;
+  word-spacing: 1px;
+  cursor: pointer;
+  margin: 10px 10px 0 0;
+}
+
+.modal__info-project-button:hover {
+  color: black;
+  background-color: #919191;
+}
