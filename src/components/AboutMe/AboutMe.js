@@ -8,7 +8,9 @@ function AboutMe() {
   const handleEducationLink = () => {
     history.push("/education");
   };
-
+  const handleCodingLink = () => {
+    history.push("/code");
+  };
   return (
     <section className="about-me">
       <div>
@@ -41,10 +43,12 @@ function AboutMe() {
         <img className="about-me__image" src={profileImage} alt="Marlon Nunez"></img>
       </div>
       <div className="about-me__container-buttons">
-        <button className="about-me__button" tyoe="button" onClick={handleEducationLink}>
+        <button className="about-me__button" type="button" onClick={handleEducationLink}>
           Education
         </button>
-        <button className="about-me__button">Skills and Languages</button>
+        <button className="about-me__button" type="button" onClick={handleCodingLink}>
+          Skills and Languages
+        </button>
       </div>
     </section>
   );
