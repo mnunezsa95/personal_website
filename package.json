@@ -1,7 +1,6 @@
 {
   "name": "personal_website",
   "author": "Marlon Nunez",
-  "homepage": "www.marlonnunez.site",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
