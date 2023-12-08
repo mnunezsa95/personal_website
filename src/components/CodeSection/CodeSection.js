@@ -1,6 +1,6 @@
 import React from "react";
 import CodeCard from "../CodeCard/CodeCard.js";
-import codeItems from "../utils/codingItems.js";
+import codeItems from "../../utils/codingItems.js";
 import "./CodeSection.css";
 
 function CodeSection({ handleSelectedCard, selectedCard }) {
