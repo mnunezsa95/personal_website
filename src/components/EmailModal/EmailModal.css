@@ -1,0 +1,84 @@
+.email__modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.email__modal-form {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(80, 80, 80);
+  padding: 20px;
+  border-radius: 25px;
+  max-width: 450px;
+  max-height: 450px;
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.email__modal-close-button-image {
+  background-image: url("../../images/close-button-modal.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  height: 20px;
+  width: 20px;
+  border: none;
+  position: absolute;
+  right: 28px;
+  top: 28px;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.email__modal-title {
+  margin: 0;
+  flex-direction: column;
+  font-family: "Teko", sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  color: #919191;
+}
+
+.email__modal-letter-m {
+  width: 35px;
+  height: 35px;
+}
+
+.email__modal-input-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+.email__modal-input {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(80, 80, 80);
+  color: white;
+  border: none;
+  border-bottom: 2px solid #49a246;
+  font-size: 1rem;
+  padding: 0;
+  outline: none;
+  word-wrap: break-word;
+}
+
+.email__modal-submit-btn {
+  font-family: "Teko", sans-serif;
+  font-size: 20px;
+  margin: 10px auto 10px auto;
+  width: 100px;
+  padding: 10px;
+  border-radius: 25px;
+  border: none;
+  background-color: #49a246;
+  cursor: pointer;
+}

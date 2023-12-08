@@ -14,7 +14,7 @@ import linkedinIcon from "../../images/linkedin-icon.svg";
 import githubIcon from "../../images/github-icon.svg";
 import "./Sidebar.css";
 
-function Sidebar() {
+function Sidebar({ handleEmailModal }) {
   let location = useLocation();
   const currentLocation = location.pathname;
   const handleGitHubLink = () => window.open("https://github.com/mnunezsa95");
@@ -79,7 +79,7 @@ function Sidebar() {
               </button>
             </Link>
           )}
-          <button className="sidebar__navigation-button">
+          <button className="sidebar__navigation-button" type="button" onClick={handleEmailModal}>
             <img className="sidebar__navigation-icon" src={emailIcon} alt="email icon"></img>
           </button>
         </div>
@@ -90,7 +90,7 @@ function Sidebar() {
             <img className="sidebar__navigation-icon" src={linkedinIcon} alt="linkedin icon"></img>
           </button>
           <button className="sidebar__navigation-button" onClick={handleGitHubLink}>
-            <img className="sidebar__navigation-icon" src={githubIcon} alt="linkedin icon"></img>
+            <img className="sidebar__navigation-icon" src={githubIcon} alt="github icon"></img>
           </button>
         </div>
       </div>
