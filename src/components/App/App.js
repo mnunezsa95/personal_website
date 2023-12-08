@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Switch, Route } from "react-router-dom";
-import "./App.css";
 import Sidebar from "../Sidebar/Sidebar.js";
 import Main from "../Main/Main.js";
 import AboutMe from "../AboutMe/AboutMe.js";
 import CodeSection from "../CodeSection/CodeSection.js";
 import CodeCardModal from "../CodeCardModal/CodeCardModal.js";
 import EmailModal from "../EmailModal/EmailModal.js";
+import "./App.css";
 
 function App() {
   const [activeModal, setActiveModal] = useState(null);
