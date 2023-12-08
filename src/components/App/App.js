@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Switch, Route } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar.js";
 import Main from "../Main/Main.js";
@@ -20,6 +20,15 @@ function App() {
     setActiveModal("preview");
     setSelectedCard(codeCard);
   };
+
+  useEffect(() => {
+    if (!activeModal) return;
+    const handleEscClose = (evt) => {
+      if (evt.key === "Escape") handleCloseModal();
+    };
+    document.addEventListener("keydown", handleEscClose);
+    return () => document.removeEventListener("keydown", handleEscClose);
+  }, [activeModal]);
 
   return (
     <div className="page">
