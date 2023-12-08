@@ -23,27 +23,23 @@ function App() {
 
   return (
     <div className="page">
+      <Sidebar handleEmailModal={handleEmailModal}></Sidebar>
       <Switch>
         <Route exact path="/">
-          <Sidebar handleEmailModal={handleEmailModal}></Sidebar>
           <Main></Main>
         </Route>
         <Route path="/about-me">
-          <Sidebar handleEmailModal={handleEmailModal}></Sidebar>
           <AboutMe></AboutMe>
         </Route>
-        <Route path="/education">
-          <Sidebar handleEmailModal={handleEmailModal}></Sidebar>
-        </Route>
+        <Route path="/education"></Route>
         <Route path="/code">
-          <Sidebar handleEmailModal={handleEmailModal}></Sidebar>
           <CodeSection handleSelectedCard={handleSelectedCard}></CodeSection>
         </Route>
       </Switch>
       {activeModal === "preview" && (
         <CodeCardModal isOpen={activeModal === "preview"} selectedCard={selectedCard} handleCloseModal={handleCloseModal}></CodeCardModal>
       )}
-      {activeModal === "email" && <EmailModal isOpen={activeModal === "email"}></EmailModal>}
+      {activeModal === "email" && <EmailModal isOpen={activeModal === "email"} handleCloseModal={handleCloseModal}></EmailModal>}
     </div>
   );
 }

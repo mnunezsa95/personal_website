@@ -10,17 +10,17 @@
 
 .email__modal-form {
   margin: auto;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   background-color: rgb(80, 80, 80);
   padding: 20px;
   border-radius: 25px;
-  max-width: 450px;
-  max-height: 450px;
-  height: 100%;
+  max-width: 400px;
+  max-height: 400px;
+  height: fit-content;
   width: 100%;
-  position: relative;
 }
 
 .email__modal-close-button-image {
@@ -35,13 +35,11 @@
   right: 28px;
   top: 28px;
   cursor: pointer;
-  opacity: 1;
 }
 
 .email__modal-title {
-  margin: 0;
-  flex-direction: column;
   font-family: "Teko", sans-serif;
+  margin: 0;
   font-size: 60px;
   font-weight: 600;
   color: #919191;
@@ -56,7 +54,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  gap: 10px;
+  gap: 15px;
 }
 
 .email__modal-input {
@@ -68,13 +66,13 @@
   font-size: 1rem;
   padding: 0;
   outline: none;
-  word-wrap: break-word;
+  resize: none;
 }
 
 .email__modal-submit-btn {
   font-family: "Teko", sans-serif;
   font-size: 20px;
-  margin: 10px auto 10px auto;
+  margin: 0 auto;
   width: 100px;
   padding: 10px;
   border-radius: 25px;

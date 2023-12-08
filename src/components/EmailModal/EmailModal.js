@@ -11,6 +11,9 @@ function EmailModal({ handleCloseModal }) {
       .then((res) => {
         console.log("SUCCESS!", res.status, res.text);
       })
+      .then(() => {
+        setToSend({ first_name: "", last_name: "", message: "", reply_to: "" });
+      })
       .catch((err) => {
         console.log("FAILED...", err);
       });
@@ -38,12 +41,22 @@ function EmailModal({ handleCloseModal }) {
             onChange={handleChange}
           />
           <input className="email__modal-input" type="text" name="last_name" placeholder="Last name" value={toSend.last_name} onChange={handleChange} />
-          <input className="email__modal-input" type="text" name="message" placeholder="Message" value={toSend.message} onChange={handleChange} />
+          <textarea
+            className="email__modal-input"
+            rows="5"
+            cols="5"
+            wrap="soft"
+            type="text"
+            name="message"
+            placeholder="Message"
+            value={toSend.message}
+            onChange={handleChange}
+          />
           <input className="email__modal-input" type="text" name="reply_to" placeholder="Your email" value={toSend.reply_to} onChange={handleChange} />
+          <button className="email__modal-submit-btn" type="submit">
+            Submit
+          </button>
         </div>
-        <button className="email__modal-submit-btn" type="submit">
-          Submit
-        </button>
       </form>
     </div>
   );
