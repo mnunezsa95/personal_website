@@ -22,7 +22,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "predeploy": "npm run build",
-    "deploy": "npm run build && scp -r -i path/to/ssh/key ./build/* mnunezsa95@marlonnunez.site:/home/mnunezsa95/frontend"
+    "deploy": "npm run build && scp -r -i ~/.ssh/id_ed25519 ./build/* mnunezsa95@marlonnunez.site:/home/mnunezsa95/frontend"
   },
   "eslintConfig": {
     "extends": [

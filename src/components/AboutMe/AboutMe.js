@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import profileImage from "../../images/marlon-nunez.jpeg";
 import "./AboutMe.css";
 import { useHistory } from "react-router-dom";
