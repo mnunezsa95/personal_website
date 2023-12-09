@@ -1,6 +1,6 @@
 .codecard__container {
   margin: 0 auto;
-  width: 200px;
+  width: 180px;
   display: flex;
   flex-direction: column;
   background-color: transparent;
@@ -14,7 +14,7 @@
 }
 
 .codecard__image {
-  height: 120px;
+  height: 110px;
   border-radius: 15px 15px 0 0;
 }
 
