@@ -34,8 +34,8 @@
 }
 
 .about-me__image {
-  width: 350px;
-  height: 450px;
+  max-width: 350px;
+  max-height: 450px;
   border-radius: 50%;
 }
 

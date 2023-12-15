@@ -1,5 +1,5 @@
 import React from "react";
-import profileImage from "../../images/marlon-nunez.jpeg";
+import profileImage from "../../images/marlon-nunez.png";
 import "./AboutMe.css";
 import { useHistory } from "react-router-dom";
 
