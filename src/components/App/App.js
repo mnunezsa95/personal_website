@@ -1,20 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, lazy, Suspense } from "react";
 import { Switch, Route } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar.js";
 import Main from "../Main/Main.js";
-import AboutMe from "../AboutMe/AboutMe.js";
-import CodeSection from "../CodeSection/CodeSection.js";
 import CodeCardModal from "../CodeCardModal/CodeCardModal.js";
 import EmailModal from "../EmailModal/EmailModal.js";
+import Loader from "../Loader/Loader.js";
 import "./App.css";
 
 function App() {
   const [activeModal, setActiveModal] = useState(null);
   const [selectedCard, setSelectedCard] = useState({});
-  const handleEmailModal = () => {
-    console.log("email");
-    setActiveModal("email");
-  };
+  const AboutMe = lazy(() => import("../AboutMe/AboutMe.js"));
+  const CodeSection = lazy(() => import("../CodeSection/CodeSection.js"));
+  const handleEmailModal = () => setActiveModal("email");
   const handleCloseModal = () => setActiveModal(null);
   const handleSelectedCard = (codeCard) => {
     setActiveModal("preview");
@@ -38,11 +36,15 @@ function App() {
           <Main></Main>
         </Route>
         <Route path="/about-me">
-          <AboutMe></AboutMe>
+          <Suspense fallback={<Loader />}>
+            <AboutMe></AboutMe>
+          </Suspense>
         </Route>
         <Route path="/education"></Route>
         <Route path="/code">
-          <CodeSection handleSelectedCard={handleSelectedCard}></CodeSection>
+          <Suspense fallback={<Loader />}>
+            <CodeSection handleSelectedCard={handleSelectedCard}></CodeSection>
+          </Suspense>
         </Route>
       </Switch>
       {activeModal === "preview" && (
