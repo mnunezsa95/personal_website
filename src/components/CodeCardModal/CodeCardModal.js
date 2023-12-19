@@ -1,9 +1,9 @@
 import React from "react";
 import "./CodeCardModal.css";
 
-function CodeCardModal({ handleCloseModal, selectedCard }) {
+function CodeCardModal({ handleCloseModal, selectedCard, handleCloseModalOverlayClick }) {
   return (
-    <div className="modal">
+    <div className="modal" onClick={handleCloseModalOverlayClick}>
       <div className="modal__content-card">
         <img className="modal__image" src={selectedCard.img} alt={selectedCard.name} />
         <button className="modal__close-button-image" type="button" onClick={handleCloseModal} />

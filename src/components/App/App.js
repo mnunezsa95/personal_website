@@ -18,7 +18,13 @@ function App() {
     setActiveModal("preview");
     setSelectedCard(codeCard);
   };
+  const handleCloseModalOverlayClick = (e) => {
+    if (e.target === e.currentTarget) {
+      handleCloseModal();
+    }
+  };
 
+  // close modal using ESC
   useEffect(() => {
     if (!activeModal) return;
     const handleEscClose = (evt) => {
@@ -48,9 +54,20 @@ function App() {
         </Route>
       </Switch>
       {activeModal === "preview" && (
-        <CodeCardModal isOpen={activeModal === "preview"} selectedCard={selectedCard} handleCloseModal={handleCloseModal}></CodeCardModal>
+        <CodeCardModal
+          isOpen={activeModal === "preview"}
+          selectedCard={selectedCard}
+          handleCloseModal={handleCloseModal}
+          handleCloseModalOverlayClick={handleCloseModalOverlayClick}
+        ></CodeCardModal>
       )}
-      {activeModal === "email" && <EmailModal isOpen={activeModal === "email"} handleCloseModal={handleCloseModal}></EmailModal>}
+      {activeModal === "email" && (
+        <EmailModal
+          isOpen={activeModal === "email"}
+          handleCloseModal={handleCloseModal}
+          handleCloseModalOverlayClick={handleCloseModalOverlayClick}
+        ></EmailModal>
+      )}
     </div>
   );
 }

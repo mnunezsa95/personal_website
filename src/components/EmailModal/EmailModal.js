@@ -3,7 +3,7 @@ import { send } from "emailjs-com";
 import letterM from "../../images/letter-m.svg";
 import "./EmailModal.css";
 
-function EmailModal({ handleCloseModal }) {
+function EmailModal({ handleCloseModal, handleCloseModalOverlayClick }) {
   const [toSend, setToSend] = useState({ first_name: "", last_name: "", message: "", reply_to: "" });
   const onSubmit = (evt) => {
     evt.preventDefault();
@@ -24,7 +24,7 @@ function EmailModal({ handleCloseModal }) {
   };
 
   return (
-    <div className="email__modal">
+    <div className="email__modal" onClick={handleCloseModalOverlayClick}>
       <form className="email__modal-form" onSubmit={onSubmit}>
         <p className="email__modal-title">
           Contact <img className="email__modal-letter-m" src={letterM} alt="letter m"></img>e,
