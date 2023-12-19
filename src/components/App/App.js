@@ -6,12 +6,14 @@ import CodeCardModal from "../CodeCardModal/CodeCardModal.js";
 import EmailModal from "../EmailModal/EmailModal.js";
 import Loader from "../Loader/Loader.js";
 import "./App.css";
+import Education from "../Education/Education.js";
 
 function App() {
   const [activeModal, setActiveModal] = useState(null);
   const [selectedCard, setSelectedCard] = useState({});
   const AboutMe = lazy(() => import("../AboutMe/AboutMe.js"));
   const CodeSection = lazy(() => import("../CodeSection/CodeSection.js"));
+  const EducationSection = lazy(() => import("../EducationSection/EducationSection.js"));
   const handleEmailModal = () => setActiveModal("email");
   const handleCloseModal = () => setActiveModal(null);
   const handleSelectedCard = (codeCard) => {
@@ -46,7 +48,11 @@ function App() {
             <AboutMe></AboutMe>
           </Suspense>
         </Route>
-        <Route path="/education"></Route>
+        <Route path="/education">
+          <Suspense fallback={<Loader />}>
+            <EducationSection></EducationSection>
+          </Suspense>
+        </Route>
         <Route path="/code">
           <Suspense fallback={<Loader />}>
             <CodeSection handleSelectedCard={handleSelectedCard}></CodeSection>

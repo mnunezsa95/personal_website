@@ -1,0 +1,47 @@
+.education__container {
+  margin: 25px 0;
+  display: flex;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #919191;
+}
+
+.education__date {
+  margin: 0;
+  text-wrap: wrap;
+  max-width: 100px;
+  font-size: 1.125rem;
+  padding-right: 15px;
+}
+
+.education__item-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  row-gap: 5px;
+  border-left: 5px solid #49a246;
+  padding-left: 15px;
+}
+
+.education__degree {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 800;
+  max-width: 700px;
+  line-height: 1;
+}
+
+.education__major {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+}
+
+.education__institution-name {
+  margin: 0;
+  font-size: 1.125rem;
+}
+
+.education__institution-location {
+  margin: 0;
+  font-size: 1rem;
+}
