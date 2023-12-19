@@ -3,7 +3,8 @@ const codeItems = [
     name: "HTML 5",
     codeId: 1,
     img: require("../images/html-icon.svg").default,
-    description: "",
+    description: `Skills: Semantic HTML, HTML Rendering, Search Engine Optimization (SEO), Metadata, 
+    Responsive Web Design, Document Object Model (DOM), DOM Scripting, HTML/JavaScript Integration, HTML/CSS Integration, HTML/CSS Validation`,
     projects: ["Library Landing Page", "Coffeeshop"],
     projectURL: ["https://mnunezsa95.github.io/se_project_library/", "https://mnunezsa95.github.io/se_project_coffeeshop/"],
   },
@@ -11,7 +12,7 @@ const codeItems = [
     name: "CSS 3",
     codeId: 2,
     img: require("../images/css-icon.svg").default,
-    description: "abc",
+    description: `Skills: CSS 3, Responsive Web Design, HTML/CSS Integration, HTML/CSS Validation, CSS Flexbox, CSS Grid Layout, CSS Animations`,
     projects: ["Library Landing Page", "Coffeeshop", "Around the U.S", "Bank Marketing Site", "Pig Game", "Number Game"],
     projectURL: [
       "https://mnunezsa95.github.io/se_project_library/",
@@ -26,7 +27,7 @@ const codeItems = [
     name: "JavaScript",
     codeId: 3,
     img: require("../images/javascript-icon.svg").default,
-    description: "abc",
+    description: `Skills: HTML/JavaScript Integration, EcmaScript 6 (ES6), Virtual DOM, Vanilla JavaScript, Modular JavaScript, Asynchronous JavaScript and XML (AJAX, Async Await, Promises), Object-Oriented JavaScript (ES6 Classes), JavaScript Prototypes, JavaScript eXtension (JSX), External JavaScript Library Integration, Server Side JavaScript (using Node.js), JavaScript Objection Notation (JSON), JavaScript Frameworks (React.js)`,
     projects: ["Around the U.S", "Bank App", "Workout App", "Forkify App", "Bank Marketing Site", "Pig Game", "Number Game"],
     projectURL: [
       "https://mnunezsa95.github.io/se_project_aroundtheus/",
@@ -50,7 +51,8 @@ const codeItems = [
     name: "Node.js",
     codeId: 5,
     img: require("../images/node-icon.svg").default,
-    description: "abc",
+    description:
+      "Server Side Development, Server Testing, Client-Server Communication, Routing, Middleware Functions, Data Parsing, Serving HTML and Static Files, REST API Creation, Backend Authentication, Backend Authorization, Integrating external Express.js and Node.js modules and packages",
     projects: ["What to Wear App", "News Explorer App"],
     projectURL: ["https://www.wtwear.mooo.com/", "https://www.news-explorer.mooo.com/"],
   },
