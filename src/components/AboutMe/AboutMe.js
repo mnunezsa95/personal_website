@@ -11,6 +11,7 @@ function AboutMe() {
   const handleCodingLink = () => {
     history.push("/code");
   };
+
   return (
     <section className="about-me">
       <div>
@@ -48,6 +49,9 @@ function AboutMe() {
         </button>
         <button className="about-me__button" type="button" onClick={handleCodingLink}>
           Skills and Languages
+        </button>
+        <button className="about-me__button" type="button">
+          Download my resume
         </button>
       </div>
     </section>
