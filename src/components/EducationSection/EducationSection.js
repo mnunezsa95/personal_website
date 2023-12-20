@@ -1,9 +1,10 @@
 import React from "react";
+import { block } from "million/react";
 import Education from "../Education/Education";
 import educationItems from "../../utils/educationItems";
 import "./EducationSection.css";
 
-function EducationSection() {
+const EducationSectionBlock = block(function EducationSection() {
   return (
     <section className="education__section">
       <h3 className="education__section-title">Education</h3>
@@ -14,6 +15,6 @@ function EducationSection() {
       </div>
     </section>
   );
-}
+});
 
-export default EducationSection;
+export default EducationSectionBlock;

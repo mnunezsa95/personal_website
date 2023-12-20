@@ -1,7 +1,7 @@
 import React from "react";
 import profileImage from "../../images/marlon-nunez.png";
-import "./AboutMe.css";
 import { useHistory } from "react-router-dom";
+import "./AboutMe.css";
 
 function AboutMe() {
   let history = useHistory();

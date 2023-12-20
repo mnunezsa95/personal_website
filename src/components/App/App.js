@@ -6,14 +6,13 @@ import CodeCardModal from "../CodeCardModal/CodeCardModal.js";
 import EmailModal from "../EmailModal/EmailModal.js";
 import Loader from "../Loader/Loader.js";
 import "./App.css";
-import Education from "../Education/Education.js";
 
 function App() {
   const [activeModal, setActiveModal] = useState(null);
   const [selectedCard, setSelectedCard] = useState({});
   const AboutMe = lazy(() => import("../AboutMe/AboutMe.js"));
   const CodeSection = lazy(() => import("../CodeSection/CodeSection.js"));
-  const EducationSection = lazy(() => import("../EducationSection/EducationSection.js"));
+  const EducationSectionBlock = lazy(() => import("../EducationSection/EducationSection.js"));
   const handleEmailModal = () => setActiveModal("email");
   const handleCloseModal = () => setActiveModal(null);
   const handleSelectedCard = (codeCard) => {
@@ -38,24 +37,24 @@ function App() {
 
   return (
     <div className="page">
-      <Sidebar handleEmailModal={handleEmailModal}></Sidebar>
+      <Sidebar handleEmailModal={handleEmailModal} />
       <Switch>
         <Route exact path="/">
-          <Main></Main>
+          <Main />
         </Route>
         <Route path="/about-me">
           <Suspense fallback={<Loader />}>
-            <AboutMe></AboutMe>
+            <AboutMe />
           </Suspense>
         </Route>
         <Route path="/education">
           <Suspense fallback={<Loader />}>
-            <EducationSection></EducationSection>
+            <EducationSectionBlock />
           </Suspense>
         </Route>
         <Route path="/code">
           <Suspense fallback={<Loader />}>
-            <CodeSection handleSelectedCard={handleSelectedCard}></CodeSection>
+            <CodeSection handleSelectedCard={handleSelectedCard} />
           </Suspense>
         </Route>
       </Switch>
@@ -65,14 +64,10 @@ function App() {
           selectedCard={selectedCard}
           handleCloseModal={handleCloseModal}
           handleCloseModalOverlayClick={handleCloseModalOverlayClick}
-        ></CodeCardModal>
+        />
       )}
       {activeModal === "email" && (
-        <EmailModal
-          isOpen={activeModal === "email"}
-          handleCloseModal={handleCloseModal}
-          handleCloseModalOverlayClick={handleCloseModalOverlayClick}
-        ></EmailModal>
+        <EmailModal isOpen={activeModal === "email"} handleCloseModal={handleCloseModal} handleCloseModalOverlayClick={handleCloseModalOverlayClick} />
       )}
     </div>
   );
