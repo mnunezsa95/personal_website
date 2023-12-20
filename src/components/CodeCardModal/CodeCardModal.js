@@ -2,6 +2,7 @@ import React from "react";
 import "./CodeCardModal.css";
 
 function CodeCardModal({ handleCloseModal, selectedCard, handleCloseModalOverlayClick }) {
+  console.log(selectedCard.description);
   return (
     <div className="modal" onClick={handleCloseModalOverlayClick}>
       <div className="modal__content-card">

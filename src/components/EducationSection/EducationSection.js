@@ -6,6 +6,7 @@ import "./EducationSection.css";
 function EducationSection() {
   return (
     <section className="education__section">
+      <h3 className="education__section-title">Education</h3>
       <div className="education__item">
         {educationItems.map((eduItem) => {
           return <Education eduItem={eduItem} key={eduItem?.educationId ?? eduItem?.educationId}></Education>;

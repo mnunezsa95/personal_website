@@ -9,7 +9,7 @@ function Education({ eduItem }) {
         {eduItem.startYear} - {eduItem.graduationYear} ({eduItem.duration})
       </p>
       <div className="education__item-info">
-        <h3 className="education__degree">{eduItem.degree}</h3>
+        <h4 className="education__degree">{eduItem.degree}</h4>
         <h4 className="education__major">{eduItem.major}</h4>
         <p className="education__institution-name">
           {eduItem?.institutionName} | {eduItem?.institutionCity}

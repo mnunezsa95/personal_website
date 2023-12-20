@@ -52,7 +52,7 @@ const codeItems = [
     codeId: 5,
     img: require("../images/node-icon.svg").default,
     description:
-      "Server Side Development, Server Testing, Client-Server Communication, Routing, Middleware Functions, Data Parsing, Serving HTML and Static Files, REST API Creation, Backend Authentication, Backend Authorization, Integrating external Express.js and Node.js modules and packages",
+      "Skills: Server Side Development, Server Testing, Client-Server Communication, Routing, Middleware Functions, Data Parsing, Serving HTML and Static Files, REST API Creation, Backend Authentication, Backend Authorization, Integrating external Express.js and Node.js modules and packages",
     projects: ["What to Wear App", "News Explorer App"],
     projectURL: ["https://www.wtwear.mooo.com/", "https://www.news-explorer.mooo.com/"],
   },
@@ -135,6 +135,13 @@ const codeItems = [
     img: require("../images/github-icon-code.svg").default,
     projects: ["GitHub Projects"],
     projectURL: ["https://github.com/mnunezsa95"],
+  },
+  {
+    name: "Figma",
+    codeId: 17,
+    img: require("../images/figma-icon.svg").default,
+    projects: ["Figma Designs"],
+    projectURL: [""],
   },
 ];
 

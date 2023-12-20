@@ -1,3 +1,13 @@
 .education__section {
   margin: 0 auto;
 }
+
+.education__section-title {
+  margin: 0;
+  font-family: "Teko", sans-serif;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #49a246;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
