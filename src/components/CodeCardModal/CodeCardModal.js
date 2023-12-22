@@ -2,7 +2,6 @@ import React from "react";
 import "./CodeCardModal.css";
 
 function CodeCardModal({ handleCloseModal, selectedCard, handleCloseModalOverlayClick }) {
-  console.log(selectedCard.description);
   return (
     <div className="modal" onClick={handleCloseModalOverlayClick}>
       <div className="modal__content-card">
@@ -12,7 +11,11 @@ function CodeCardModal({ handleCloseModal, selectedCard, handleCloseModalOverlay
           <p className="modal__info-name">{selectedCard.name}</p>
           <p className="modal__info-description">{selectedCard.description}</p>
           {selectedCard?.projects?.map((item, index) => {
-            return (
+            return !selectedCard?.projectURL[index] ? (
+              <button className="modal__info-project-button" key={index} disabled>
+                {item}
+              </button>
+            ) : (
               <button className="modal__info-project-button" type="button" key={index} onClick={() => window.open(selectedCard?.projectURL[index])}>
                 {item}
               </button>
