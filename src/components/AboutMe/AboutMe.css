@@ -110,7 +110,7 @@
     gap: 0.875rem;
   }
   .about-me__text-container {
-    max-height: 300px;
+    max-height: 250px;
     overflow: scroll;
   }
 
@@ -130,5 +130,24 @@
     padding: 0.5rem 1rem;
     line-height: 1.2;
     margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-me__title {
+    font-size: 1.75rem;
+  }
+
+  .about-me__text-container {
+    max-height: 200px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about-me__title {
+    font-size: 1.25rem;
+  }
+  .about-me__text-container {
+    max-height: 150px;
   }
 }

@@ -17,4 +17,9 @@
   .education__section {
     padding: 0 20px 0 20px;
   }
+
+  .education__section-title {
+    font-size: 2rem;
+    padding-bottom: 10px;
+  }
 }

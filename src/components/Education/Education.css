@@ -94,7 +94,7 @@
   .education__container {
     display: flex;
     flex-direction: column;
-    margin-bottom: 15px;
+    margin-bottom: 20px;
   }
 
   .education__item-info {
@@ -114,6 +114,9 @@
 
   .education__degree {
     font-size: 1rem;
-    padding-top: 10px;
+    padding-top: 5px;
   }
+}
+
+@media screen and (max-width: 330px) {
 }

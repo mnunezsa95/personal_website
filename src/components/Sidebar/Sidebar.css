@@ -64,3 +64,9 @@
   width: 50px;
   justify-content: flex-end;
 }
+
+@media screen and (max-width: 500px) {
+  .sidebar {
+    min-width: 75px;
+  }
+}
