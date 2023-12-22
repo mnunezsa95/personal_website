@@ -9,23 +9,22 @@
 }
 
 .modal__content-card {
+  margin: auto;
+  display: flex;
+  position: relative;
+  flex-direction: column;
   background-color: #49a246;
   border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
   min-height: 450px;
-  height: fit-content;
   max-height: 600px;
-  width: 30vw;
-  position: relative;
+  width: 400px;
 }
 
 .modal__image {
   border-radius: 10px 10px 0px 0px;
-  height: 180px;
+  height: 160px;
   width: auto;
-  background-color: white;
+  background-color: #919191;
 }
 
 .modal__close-button-image {
