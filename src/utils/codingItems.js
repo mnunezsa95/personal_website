@@ -102,7 +102,8 @@ const codeItems = [
     name: "Rest Api",
     codeId: 11,
     img: require("../images/rest-api-icon.svg").default,
-    description: "",
+    description:
+      "In developing my full-stack application back-ends, I've embraced REST API principles for a deliberately RESTful design. This allows seamless transmission of necessary information from front-end components, enabling them to prioritize user experience. The result is a clear separation of concerns, with servers efficiently managing request processing and resource management, contributing to a streamlined and maintainable architecture.",
     projects: ["What to Wear App", "News Explorer App"],
     projectURL: ["https://www.wtwear.mooo.com/", "https://www.news-explorer.mooo.com/"],
   },
@@ -110,7 +111,8 @@ const codeItems = [
     name: "ESLint",
     codeId: 12,
     img: require("../images/ESLint-icon.svg").default,
-    description: "",
+    description:
+      "In the majority of my front-end and back-end projects, I've employed ESLint, a static code analysis tool. Its role is pivotal in maintaining code quality, detecting bugs and errors preemptively before production, and enforcing consistent coding standards. Integrating ESLint into my development workflow has proven instrumental, ensuring that errors are identified early in the web application or website creation process, preventing potential issues from becoming deeply ingrained.",
     projects: ["What to Wear App", "News Explorer App"],
     projectURL: ["https://www.wtwear.mooo.com/", "https://www.news-explorer.mooo.com/"],
   },
@@ -119,7 +121,7 @@ const codeItems = [
     codeId: 13,
     img: require("../images/googlecloud-icon.svg").default,
     description:
-      "I've employed Google Cloud to construct virtual (Ubuntu) machines, serving as the hosting environment for live websites and web applications. After creating the virtual machines on Google Cloud, I seamlessly integrated an array of third-party plugins and resources, including NginX, Certbot, and PM2, to facilitate the hosting and continuous operation of my full-stack applications. The backend and front-end code were efficiently deployed and served from the cloud infrastructure. Furthermore, I maximized the capabilities of Google Cloud to create C Name and A records for domain names that were purchased, including the one utilized for the website in question.",
+      "I've used Google Cloud to build virtual (Ubuntu) machines for hosting live websites and web applications. After setting up these machines, I integrated third-party plugins like NginX, Certbot, and PM2 for seamless hosting. Both backend and frontend code were efficiently deployed from the cloud. Additionally, I utilized Google Cloud to manage C Name and A records for purchased domain names, including the one used for this website",
     projects: ["What to Wear App", "News Explorer App"],
     projectURL: ["https://www.wtwear.mooo.com/", "https://www.news-explorer.mooo.com/"],
   },
