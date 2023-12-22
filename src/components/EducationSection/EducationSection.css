@@ -1,5 +1,6 @@
 .education__section {
   margin: 0 auto;
+  padding: 0 40px 0 40px;
 }
 
 .education__section-title {
@@ -10,4 +11,10 @@
   color: #49a246;
   line-height: 1.2;
   padding-bottom: 20px;
+}
+
+@media screen and (max-width: 585px) {
+  .education__section {
+    padding: 0 20px 0 20px;
+  }
 }

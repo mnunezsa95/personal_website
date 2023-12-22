@@ -46,7 +46,7 @@ const educationItems = [
     startYear: 2014,
     graduationYear: 2018,
     duration: "4 Years",
-    degree: "Bachelors of Science and Public Health (BSPH)",
+    degree: "Bachelors of Science & Public Health (BSPH)",
     major: "Public Health, Neuroscience",
     minor: null,
     GPA: 3.58,

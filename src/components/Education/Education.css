@@ -45,3 +45,75 @@
   margin: 0;
   font-size: 1rem;
 }
+
+@media screen and (max-width: 700px) {
+  .education__date {
+    font-size: 1rem;
+  }
+
+  .education__degree {
+    font-size: 1.2rem;
+  }
+
+  .education__major {
+    font-size: 1rem;
+  }
+
+  .education__institution-name {
+    font-size: 1rem;
+  }
+
+  .education__institution-location {
+    font-size: 0.875rem;
+  }
+}
+
+@media screen and (max-width: 585px) {
+  .education__date {
+    font-size: 1rem;
+  }
+
+  .education__degree {
+    font-size: 1rem;
+  }
+
+  .education__major {
+    font-size: 0.875rem;
+  }
+
+  .education__institution-name {
+    font-size: 0.875rem;
+  }
+
+  .education__institution-location {
+    font-size: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .education__container {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+
+  .education__item-info {
+    border-left: 0;
+    border-top: 1px solid #49a246;
+    row-gap: 1px;
+    padding-left: 0;
+  }
+
+  .education__date {
+    padding-right: 0;
+    max-width: fit-content;
+    font-weight: 800;
+    font-size: 1.2rem;
+    padding-bottom: 2px;
+  }
+
+  .education__degree {
+    font-size: 1rem;
+    padding-top: 10px;
+  }
+}

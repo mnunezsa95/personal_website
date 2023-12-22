@@ -110,7 +110,7 @@
     gap: 0.875rem;
   }
   .about-me__text-container {
-    max-height: 200px;
+    max-height: 300px;
     overflow: scroll;
   }
 
