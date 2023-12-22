@@ -18,7 +18,7 @@ function AboutMe() {
         <h2 className="about-me__title">A teacher, turned project manager, turned full-stack engineer...</h2>
       </div>
       <div className="about-me__container">
-        <div>
+        <div className="about-me__text-container">
           <p className="about-me__text">
             In 2018, I embarked on my professional journey as a teacher after graduating from Tulane University. The pursuit of education led me to Boston
             University, where in 2020, I earned my master's degree in education. However, it became evident that my true calling extended beyond the confines of
