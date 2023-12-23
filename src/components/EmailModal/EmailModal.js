@@ -52,7 +52,15 @@ function EmailModal({ handleCloseModal, handleCloseModalOverlayClick }) {
             value={toSend.message}
             onChange={handleChange}
           />
-          <input className="email__modal-input" type="text" name="reply_to" placeholder="Your email" value={toSend.reply_to} onChange={handleChange} />
+          <input
+            className="email__modal-input"
+            type="text"
+            name="reply_to"
+            placeholder="Your email"
+            inputmode="email"
+            value={toSend.reply_to}
+            onChange={handleChange}
+          />
           <button className="email__modal-submit-btn" type="submit">
             Submit
           </button>
