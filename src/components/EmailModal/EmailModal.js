@@ -43,6 +43,7 @@ function EmailModal({ handleCloseModal, handleCloseModalOverlayClick }) {
           <input className="email__modal-input" type="text" name="last_name" placeholder="Last name" value={toSend.last_name} onChange={handleChange} />
           <textarea
             className="email__modal-input"
+            id="message-input"
             rows="5"
             cols="5"
             wrap="soft"

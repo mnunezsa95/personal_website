@@ -1,5 +1,4 @@
 .codecard__container {
-  margin: 0 auto;
   width: 160px;
   display: flex;
   flex-direction: column;
@@ -26,8 +25,6 @@
   padding: 10px 20px;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
-  justify-content: flex-start;
   border-radius: 0 0 15px 15px;
 }
 
@@ -39,15 +36,53 @@
   line-height: 1.2;
   text-align: center;
   color: black;
-  overflow: hidden;
 }
 
-.codecard__info-text {
-  margin: 0;
-  font-size: 1.2rem;
-  font-family: "Teko", sans-serif;
-  font-weight: 300;
-  line-height: 1.2;
-  color: rgba(26, 27, 34, 1);
-  overflow: hidden;
+@media screen and (max-width: 1140px) {
+  .codecard__container {
+    width: 150px;
+  }
+  .codecard__image {
+    height: 90px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .codecard__container {
+    width: 140px;
+  }
+  .codecard__image {
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  .codecard__container {
+    width: 120px;
+  }
+  .codecard__image {
+    height: 70px;
+  }
+
+  .codecard__info-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .codecard__container {
+    width: 90px;
+  }
+  .codecard__image {
+    height: 60px;
+  }
+
+  .codecard__info-title {
+    font-size: 1rem;
+  }
+
+  .codecard__info-container {
+    background-color: #49a246;
+    padding: 5px 10px;
+  }
 }
