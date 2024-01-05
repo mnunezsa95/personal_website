@@ -1,10 +1,9 @@
 import React from "react";
-import { block } from "million/react";
 import letterM from "../../images/letter-m.svg";
 import mainImage from "../../images/obsidan-graph-view.png";
 import "./Main.css";
 
-const MainBlock = block(function Main() {
+function Main() {
   return (
     <section className="main">
       <div className="main__title">
@@ -19,6 +18,6 @@ const MainBlock = block(function Main() {
       </div>
     </section>
   );
-});
+}
 
-export default MainBlock;
+export default Main;
