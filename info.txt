@@ -1,6 +1,0 @@
-green color: #49A246
-orange color: #E15241
-grey color: #919191
-
-IP: 104.196.134.232
-ssh mnunezsa95@104.196.134.232
